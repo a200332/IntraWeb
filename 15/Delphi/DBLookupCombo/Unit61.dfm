@@ -16,112 +16,8 @@ object IWForm61: TIWForm61
   DesignSize = (
     1321
     813)
-  DesignLeft = 8
-  DesignTop = 8
-  object cbCountry: TIWDBLookupComboBox
-    Left = 48
-    Top = 48
-    Width = 329
-    Height = 33
-    StyleRenderOptions.RenderBorder = False
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 10
-    Font.Style = []
-    RequireSelection = False
-    TabOrder = 0
-    AutoEditable = False
-    FriendlyName = 'cbCountry'
-    KeyField = 'Id'
-    ListField = 'Name'
-    ListSource = IWUserSession.dsCountry
-    DisableWhenEmpty = True
-    AutoSetListSourceCursor = True
-    AutoSetDetailState = True
-    NoSelectionText = '-- No Selection --'
-  end
-  object lblCountry: TIWLabel
-    Left = 48
-    Top = 21
-    Width = 62
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'lblCountry'
-    Caption = 'Country'
-  end
-  object cbState: TIWDBLookupComboBox
-    Left = 48
-    Top = 128
-    Width = 329
-    Height = 33
-    StyleRenderOptions.RenderBorder = False
-    Enabled = False
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 10
-    Font.Style = []
-    RequireSelection = False
-    TabOrder = 1
-    AutoEditable = False
-    FriendlyName = 'IWDBLookupComboBox1'
-    KeyField = 'Id'
-    ListField = 'Name'
-    ListSource = IWUserSession.dsState
-    DisableWhenEmpty = True
-    AutoSetListSourceCursor = True
-    AutoSetDetailState = True
-    NoSelectionText = '-- No Selection --'
-  end
-  object lblState: TIWLabel
-    Left = 48
-    Top = 101
-    Width = 129
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'lblState'
-    Caption = 'State / Province'
-  end
-  object cbCity: TIWDBLookupComboBox
-    Left = 48
-    Top = 208
-    Width = 329
-    Height = 33
-    StyleRenderOptions.RenderBorder = False
-    Enabled = False
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 10
-    Font.Style = []
-    RequireSelection = False
-    TabOrder = 2
-    AutoEditable = False
-    FriendlyName = 'IWDBLookupComboBox1'
-    KeyField = 'Id'
-    ListField = 'Name'
-    ListSource = IWUserSession.dsCity
-    DisableWhenEmpty = True
-    AutoSetListSourceCursor = True
-    AutoSetDetailState = True
-    NoSelectionText = '-- No Selection --'
-  end
-  object lblCity: TIWLabel
-    Left = 48
-    Top = 181
-    Width = 30
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'lblCity'
-    Caption = 'City'
-  end
+  DesignLeft = 2
+  DesignTop = 2
   object IWText1: TIWText
     Left = 440
     Top = 112
@@ -205,5 +101,114 @@ object IWForm61: TIWForm61
     TabOrder = 3
     RawText = False
     Caption = 'Source Code on github'
+  end
+  object IWRegion1: TIWRegion
+    Left = 16
+    Top = 33
+    Width = 393
+    Height = 321
+    RenderInvisibleControls = True
+    object lblCountry: TIWLabel
+      Left = 40
+      Top = 37
+      Width = 62
+      Height = 21
+      Font.Color = clNone
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblCountry'
+      Caption = 'Country'
+    end
+    object lblState: TIWLabel
+      Left = 40
+      Top = 117
+      Width = 129
+      Height = 21
+      Font.Color = clNone
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblState'
+      Caption = 'State / Province'
+    end
+    object lblCity: TIWLabel
+      Left = 40
+      Top = 197
+      Width = 30
+      Height = 21
+      Font.Color = clNone
+      Font.Size = 10
+      Font.Style = []
+      HasTabOrder = False
+      FriendlyName = 'lblCity'
+      Caption = 'City'
+    end
+    object cbCity: TIWDBLookupComboBox
+      Left = 32
+      Top = 224
+      Width = 329
+      Height = 33
+      StyleRenderOptions.RenderBorder = False
+      Enabled = False
+      Font.Color = clNone
+      Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+      Font.Size = 10
+      Font.Style = []
+      RequireSelection = False
+      TabOrder = 2
+      AutoEditable = False
+      FriendlyName = 'IWDBLookupComboBox1'
+      KeyField = 'Id'
+      ListField = 'Name'
+      ListSource = IWUserSession.dsCity
+      DisableWhenEmpty = True
+      AutoSetListSourceCursor = True
+      AutoSetDetailState = True
+      NoSelectionText = '-- No Selection --'
+    end
+    object cbCountry: TIWDBLookupComboBox
+      Left = 32
+      Top = 64
+      Width = 329
+      Height = 33
+      StyleRenderOptions.RenderBorder = False
+      Font.Color = clNone
+      Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+      Font.Size = 10
+      Font.Style = []
+      AutoEditable = False
+      FriendlyName = 'cbCountry'
+      KeyField = 'Id'
+      ListField = 'Name'
+      ListSource = IWUserSession.dsCountry
+      DisableWhenEmpty = True
+      AutoSetListSourceCursor = True
+      AutoSetDetailState = True
+      NoSelectionText = '-- No Selection --'
+    end
+    object cbState: TIWDBLookupComboBox
+      Left = 32
+      Top = 144
+      Width = 329
+      Height = 33
+      StyleRenderOptions.RenderBorder = False
+      Enabled = False
+      Font.Color = clNone
+      Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+      Font.Size = 10
+      Font.Style = []
+      RequireSelection = False
+      TabOrder = 1
+      AutoEditable = False
+      FriendlyName = 'IWDBLookupComboBox1'
+      KeyField = 'Id'
+      ListField = 'Name'
+      ListSource = IWUserSession.dsState
+      DisableWhenEmpty = True
+      AutoSetListSourceCursor = True
+      AutoSetDetailState = True
+      NoSelectionText = '-- No Selection --'
+    end
   end
 end
